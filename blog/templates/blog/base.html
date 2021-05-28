@@ -28,19 +28,22 @@
                     {% endif %}
                     
                     <li class="nav-item me-4">
-                        <a class="nav-link fw-bold" href="#">Features</a>
+                        <a class="nav-link fw-bold" href="#">Poetries</a>
                     </li>
                     <li class="nav-item me-4">
-                        <a class="nav-link fw-bold" href="#">Pricing</a>
+                        <a class="nav-link fw-bold" href="#">Short Stories</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link fw-bold" href="#">Novel</a>
                     </li>
                     <li class="nav-item dropdown me-4">
                         <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown link
+                            Categories
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            {% for category in categories %}
+                                <li><a class="dropdown-item" href="#">{{ category }}</a></li>
+                            {% endfor %}
                         </ul>
                     </li>
                 </ul>
@@ -57,15 +60,15 @@
         background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.jpg');
         background-repeat:no-repeat;
         width:100vw;
-        height:600px;
+        height:400px;
         background-size:cover;
         "
     >
-        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6); position:relative; heigth:100%; width:100%">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.7); position:relative; heigth:100%; width:100%">
             <div class="d-flex justify-content-center align-items-center">
-                <div class="text-white pt-5" style="height:600px;">
-                    <h1 class="mb-3 mt-5 pt-5">This is My Stories</h1>
-                    <h4 class="mb-3">Build from the inside out</h4>
+                <div class="text-white pt-5" style="height:400px;">
+                    <h1 class="mb-3 mt-5">Hi, <span style="color:#ce9797">I'm Ashley</span>,<br/> Welcome to my Blog</h1>
+                    <h6 class="mb-3">And this is the story of my life...</h6>
                     <a class="btn btn-outline-light btn-lg" href="#!" role="button">Read Me</a>
                 </div>
             </div>
